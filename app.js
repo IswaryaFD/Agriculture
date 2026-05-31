@@ -23,12 +23,12 @@ document.addEventListener('DOMContentLoaded', () => {
     const defaultProducts = [
         { id: 'p1', farmerId: 'u1', farmerName: 'Muthu Kumar', cropName: 'Organic Turmeric Finger', category: 'Spices', price: 145, unit: 'kg', qty: 2500, location: 'Pollachi, TN', img: 'default-spices', desc: 'Premium grade turmeric fingers. Fully organic cultivation. Cleaned and sun-dried.', phone: '9876543210' },
         { id: 'p2', farmerId: 'u1', farmerName: 'Muthu Kumar', cropName: 'Fresh Organic Coconuts', category: 'Others', price: 28, unit: 'piece', qty: 8000, location: 'Pollachi, TN', img: 'default-veg', desc: 'Well-matured coconuts. Sourced directly from our groves. Average weight 600g.', phone: '9876543210' },
-        { id: 'p3', farmerId: 'u1', farmerName: 'Muthu Kumar', category: 'Vegetables', cropName: 'Premium Country Tomatoes', price: 32, unit: 'kg', qty: 1500, location: 'Dharmapuri, TN', img: 'default-veg', desc: 'Harvesting starts tomorrow. Firm, medium-sized, native seeds. Handpicked.', phone: '9876543210' },
-        { id: 'p4', farmerId: 'u1', farmerName: 'Muthu Kumar', category: 'Fruits', cropName: 'Salem Gundu Mangoes', price: 85, unit: 'kg', qty: 600, location: 'Salem, TN', img: 'default-fruit', desc: 'Naturally ripened Salem special mangoes. Extremely sweet and pulpy.', phone: '9876543210' },
+        { id: 'p3', farmerId: 'u4', farmerName: 'Velusamy G.', category: 'Vegetables', cropName: 'Premium Country Tomatoes', price: 32, unit: 'kg', qty: 1500, location: 'Dharmapuri, TN', img: 'default-veg', desc: 'Harvesting starts tomorrow. Firm, medium-sized, native seeds. Handpicked.', phone: '9876543210' },
+        { id: 'p4', farmerId: 'u5', farmerName: 'Anitha Raj', category: 'Fruits', cropName: 'Salem Gundu Mangoes', price: 85, unit: 'kg', qty: 600, location: 'Salem, TN', img: 'default-fruit', desc: 'Naturally ripened Salem special mangoes. Extremely sweet and pulpy.', phone: '9876543210' },
         { id: 'p5', farmerId: 'u1', farmerName: 'Muthu Kumar', category: 'Fruits', cropName: 'Organic Red Bananas', price: 45, unit: 'kg', qty: 300, location: 'Coimbatore, TN', img: 'default-fruit', desc: 'Naturally grown red bananas from our own farm. Rich in potassium.', phone: '9876543210' },
-        { id: 'p6', farmerId: 'u1', farmerName: 'Muthu Kumar', category: 'Vegetables', cropName: 'Fresh Ooty Carrots', price: 60, unit: 'kg', qty: 800, location: 'Ooty, TN', img: 'default-veg', desc: 'Freshly harvested, premium quality carrots from the Nilgiris.', phone: '9876543210' },
+        { id: 'p6', farmerId: 'u6', farmerName: 'Suresh P.', category: 'Vegetables', cropName: 'Fresh Ooty Carrots', price: 60, unit: 'kg', qty: 800, location: 'Ooty, TN', img: 'default-veg', desc: 'Freshly harvested, premium quality carrots from the Nilgiris.', phone: '9876543210' },
         { id: 'p7', farmerId: 'u1', farmerName: 'Muthu Kumar', category: 'Grains', cropName: 'Ponni Raw Rice (Old)', price: 62, unit: 'kg', qty: 5000, location: 'Thanjavur, TN', img: 'default-grain', desc: '1-year old aged Ponni raw rice. Direct from mill. Excellent cooking quality.', phone: '9876543210' },
-        { id: 'p8', farmerId: 'u1', farmerName: 'Kumar', category: 'Fruits', cropName: 'Apple', price: 150, unit: 'kg', qty: 500, location: 'ooty', img: 'default-fruit', desc: 'Fresh ooty apple.', phone: '9876543210' }
+        { id: 'p8', farmerId: 'u7', farmerName: 'Kumar', category: 'Fruits', cropName: 'Apple', price: 150, unit: 'kg', qty: 500, location: 'ooty', img: 'default-fruit', desc: 'Fresh ooty apple.', phone: '9876543210' }
     ];
 
     // Initial clients
@@ -38,9 +38,11 @@ document.addEventListener('DOMContentLoaded', () => {
     ];
 
     // Get database from localStorage or set defaults
-    let users = JSON.parse(localStorage.getItem('agri_users')) || defaultUsers;
-    let products = JSON.parse(localStorage.getItem('agri_products')) || defaultProducts;
-    let clients = JSON.parse(localStorage.getItem('agri_clients')) || defaultClients;
+    let users = JSON.parse(localStorage.getItem('agri_users'));
+    if (!users || users.length < defaultUsers.length) users = defaultUsers;
+
+    let products = defaultProducts; // Force reset to default products to ensure 8 items
+    let clients = defaultClients;
 
     function saveDB() {
         localStorage.setItem('agri_users', JSON.stringify(users));
