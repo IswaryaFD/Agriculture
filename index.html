@@ -1,0 +1,1374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Adhiraiyan Agro Solution Private Limited - Transforming Indian agriculture through sustainable practices, direct-to-market farming, and secure investment opportunities.">
+    <title>Adhiraiyan Agro Solution | Cultivating Profits. Empowering Farmers.</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons CDN -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header / Sticky Navigation -->
+    <header class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">
+                <i data-lucide="sprout" class="logo-icon"></i>
+                <span class="logo-text">Adhiraiyan<span> Agro</span></span>
+            </a>
+            
+            <nav class="nav-menu" id="nav-menu">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#marketplace" class="nav-link">Marketplace</a>
+                <a href="#team" class="nav-link">Team</a>
+                <a href="#contact" class="nav-link">Contact</a>
+                <a href="#admin-trigger" class="nav-link admin-link" id="nav-admin-link">Admin</a>
+            </nav>
+
+            <div class="nav-actions">
+                <button class="btn btn-secondary btn-login" id="btn-open-login">Login</button>
+                <button class="btn btn-primary btn-register" id="btn-open-register">Register</button>
+                <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu">
+                    <i data-lucide="menu"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation Drawer -->
+    <div class="mobile-drawer" id="mobile-drawer">
+        <div class="drawer-header">
+            <div class="nav-logo">
+                <i data-lucide="sprout" class="logo-icon"></i>
+                <span class="logo-text">Adhiraiyan<span> Agro</span></span>
+            </div>
+            <button class="drawer-close" id="drawer-close">
+                <i data-lucide="x"></i>
+            </button>
+        </div>
+        <div class="drawer-menu">
+            <a href="#about" class="drawer-link">About</a>
+            <a href="#services" class="drawer-link">Services</a>
+            <a href="#marketplace" class="drawer-link">Marketplace</a>
+            <a href="#team" class="drawer-link">Team</a>
+            <a href="#contact" class="drawer-link">Contact</a>
+            <a href="#admin-trigger" class="drawer-link admin-link" id="drawer-admin-link">Admin</a>
+            <div class="drawer-actions">
+                <button class="btn btn-secondary w-full" id="btn-drawer-login">Login</button>
+                <button class="btn btn-primary w-full" id="btn-drawer-register">Register</button>
+            </div>
+        </div>
+    </div>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section" id="hero">
+            <div class="hero-bg-overlay"></div>
+            <div class="hero-content container">
+                <div class="hero-text-area">
+                    <span class="hero-tag">Cultivating Profits &bull; Empowering Farmers &bull; Transforming Agriculture</span>
+                    <h1 class="hero-heading animate-fade-in-up">Adhiraiyan Agro Solution</h1>
+                    <p class="hero-subheading animate-fade-in-up delay-1">
+                        Dedicated to transforming Indian agriculture through sustainable, high-yield farming practices. We empower farmers, ensure fair pricing, and offer transparent agricultural investment opportunities that generate reliable returns and community growth.
+                    </p>
+                    <div class="hero-buttons animate-fade-in-up delay-2">
+                        <button class="btn btn-primary btn-lg" id="hero-btn-register">Get Started</button>
+                        <a href="#marketplace" class="btn btn-outline btn-lg">Browse Produce</a>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-stats container">
+                <div class="stat-card">
+                    <h3 class="stat-num">USD 450B+</h3>
+                    <p class="stat-lbl">Indian Agriculture Market Value</p>
+                </div>
+                <div class="stat-card">
+                    <h3 class="stat-num">22% CAGR</h3>
+                    <p class="stat-lbl">Organic Farming Growth (by 2027)</p>
+                </div>
+                <div class="stat-card">
+                    <h3 class="stat-num">~18%</h3>
+                    <p class="stat-lbl">Contribution to India's GDP</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Project Section (Introduction, Vision & Mission) -->
+        <section class="about-section section-padding" id="about">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="sub-title">Overview</span>
+                    <h2 class="section-title">Introduction, Vision & Mission</h2>
+                    <p class="section-desc">Adhiraiyan Agro Solution Private Limited is dedicated to transforming Indian agriculture. By directly empowering farmers, eliminating intermediaries, and offering innovative land-based investment opportunities, we create a profitable and socially impactful ecosystem.</p>
+                </div>
+                
+                <div class="about-grid">
+                    <div class="about-card farmer-focus animate-slide-in">
+                        <div class="card-icon">
+                            <i data-lucide="eye"></i>
+                        </div>
+                        <h3>Our Vision</h3>
+                        <p>To lead sustainable agriculture with scalable, profitable, and trusted farming solutions.</p>
+                        <ul class="about-list">
+                            <li><i data-lucide="check-circle-2"></i> Leading Sustainable Growth</li>
+                            <li><i data-lucide="check-circle-2"></i> Scalable & Profitable Models</li>
+                            <li><i data-lucide="check-circle-2"></i> Trusted Farming Solutions</li>
+                        </ul>
+                    </div>
+
+                    <div class="about-card buyer-focus animate-slide-in delay-1">
+                        <div class="card-icon">
+                            <i data-lucide="compass"></i>
+                        </div>
+                        <h3>Our Mission</h3>
+                        <p>To empower farmers, ensure quality produce, and create transparent agricultural investment opportunities.</p>
+                        <ul class="about-list">
+                            <li><i data-lucide="check-circle-2"></i> Direct Farmer Empowerment</li>
+                            <li><i data-lucide="check-circle-2"></i> Premium Quality Produce</li>
+                            <li><i data-lucide="check-circle-2"></i> Transparent Investments</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="slogan-card">
+                    &ldquo;Building Sustainable Agriculture. Delivering Profitable Growth.&rdquo;
+                </div>
+            </div>
+        </section>
+
+
+        <!-- About Image Showcase -->
+        <section class="about-image-section" id="about-showcase">
+            <div class="container">
+                <div class="about-image-grid">
+                    <div class="about-img-card">
+                        <img src="about_farming.png" alt="Sustainable organic farming at Adhiraiyan Agro" class="about-showcase-img">
+                    </div>
+                    <div class="about-img-card">
+                        <img src="marketplace_produce.png" alt="Fresh organic produce from Adhiraiyan Agro farms" class="about-showcase-img">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Products and Services Section (Replacing Features) -->
+        <section class="features-section section-padding" id="services">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="sub-title">Our Offerings</span>
+                    <h2 class="section-title">Products and Services</h2>
+                    <p class="section-desc">Our integrated solutions support the entire agricultural value chain, promoting efficient cultivation, crop supplies, and structured investments.</p>
+                </div>
+
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon"><i data-lucide="tractor"></i></div>
+                        <h3>Integrated Farm Management</h3>
+                        <p>End-to-end farm operations with modern agricultural practices to optimize yield and resource efficiency.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon"><i data-lucide="sprout"></i></div>
+                        <h3>Sustainable Crop Cultivation</h3>
+                        <p>Eco-friendly farming ensuring high-quality and consistent produce that meets international safety standards.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon"><i data-lucide="coins"></i></div>
+                        <h3>Agri Investment Model</h3>
+                        <p>Structured, land-based investment opportunities with stable, asset-backed returns and shared profitability.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon"><i data-lucide="leaf"></i></div>
+                        <h3>Organic Produce Supply</h3>
+                        <p>Fresh, chemical-free products carefully graded and packaged for premium domestic and export markets.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon"><i data-lucide="droplet"></i></div>
+                        <h3>Resource Optimization</h3>
+                        <p>Efficient water, soil, and farm resource management leveraging modern sensor and micro-irrigation systems.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon"><i data-lucide="users"></i></div>
+                        <h3>Farmer Support</h3>
+                        <p>Continuous training, technological inputs, market access, and improved farming practices for rural partners.</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Marketplace / Produce Gallery Section (Farmer Module Input) -->
+        <section class="marketplace-section section-padding" id="marketplace">
+            <div class="container">
+                <div class="section-header">
+                    <div>
+                        <span class="sub-title">Live Marketplace</span>
+                        <h2 class="section-title">Fresh Harvest Catalog</h2>
+                    </div>
+                    <div class="marketplace-actions">
+                        <button class="btn btn-primary" id="btn-marketplace-upload">
+                            <i data-lucide="plus-circle"></i> Upload Produce
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Filters -->
+                <div class="marketplace-filters">
+                    <div class="search-box">
+                        <i data-lucide="search"></i>
+                        <input type="text" id="market-search" placeholder="Search crops, location, or farmers...">
+                    </div>
+                    <div class="category-tabs" id="category-tabs">
+                        <button class="category-tab active" data-category="all">All Crops</button>
+                        <button class="category-tab" data-category="Vegetables">Vegetables</button>
+                        <button class="category-tab" data-category="Fruits">Fruits</button>
+                        <button class="category-tab" data-category="Grains">Grains</button>
+                        <button class="category-tab" data-category="Spices">Spices & Herbs</button>
+                        <button class="category-tab" data-category="Others">Others</button>
+                    </div>
+                </div>
+
+                <!-- Products Grid -->
+                <div class="products-grid" id="products-grid">
+                    <!-- Dynamic rendering via JS -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Membership Section -->
+        <section class="membership-section section-padding" id="membership">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="sub-title">Premium Access</span>
+                    <h2 class="section-title">Choose Your Plan</h2>
+                    <p class="section-desc">Unlock premium features, commercial tools, advanced analytics, and priority logistics systems.</p>
+                    
+                    <div class="membership-toggle">
+                        <button class="toggle-btn active" id="toggle-farmers">For Farmers</button>
+                        <button class="toggle-btn" id="toggle-buyers">For Buyers</button>
+                    </div>
+                </div>
+
+                <!-- Farmer plans -->
+                <div class="plans-grid active" id="farmer-plans">
+                    <div class="plan-card">
+                        <div class="plan-header">
+                            <h3>Sprout Plan</h3>
+                            <div class="price">Free<span>/always</span></div>
+                        </div>
+                        <ul class="plan-features">
+                            <li><i data-lucide="check" class="check-icon"></i> Up to 5 Active Product Listings</li>
+                            <li><i data-lucide="check" class="check-icon"></i> Basic Marketplace Search Visiblity</li>
+                            <li><i data-lucide="check" class="check-icon"></i> WhatsApp Link Inquiry Button</li>
+                            <li class="disabled"><i data-lucide="x" class="x-icon"></i> Advanced Price Optimization Charts</li>
+                            <li class="disabled"><i data-lucide="x" class="x-icon"></i> Verification Badge</li>
+                        </ul>
+                        <button class="btn btn-outline w-full plan-cta" data-plan="Sprout">Get Started</button>
+                    </div>
+
+                    <div class="plan-card premium">
+                        <div class="premium-badge">Most Popular</div>
+                        <div class="plan-header">
+                            <h3>Harvest Master</h3>
+                            <div class="price">₹499<span>/month</span></div>
+                        </div>
+                        <ul class="plan-features">
+                            <li><i data-lucide="check" class="check-icon"></i> Unlimited Listings & Bulk Upload</li>
+                            <li><i data-lucide="check" class="check-icon"></i> Featured Seller Badge & Priority Search</li>
+                            <li><i data-lucide="check" class="check-icon"></i> Dedicated WhatsApp Business Forwarding</li>
+                            <li><i data-lucide="check" class="check-icon"></i> Daily Local Market Price Analytics</li>
+                            <li><i data-lucide="check" class="check-icon"></i> Premium Logistics & Cargo Insuring</li>
+                        </ul>
+                        <button class="btn btn-primary w-full plan-cta" data-plan="Harvest Master" data-price="499">Go Premium</button>
+                    </div>
+                </div>
+
+                <!-- Buyer plans -->
+                <div class="plans-grid" id="buyer-plans">
+                    <div class="plan-card">
+                        <div class="plan-header">
+                            <h3>Eco Sourcing</h3>
+                            <div class="price">Free<span>/always</span></div>
+                        </div>
+                        <ul class="plan-features">
+                            <li><i data-lucide="check" class="check-icon"></i> Direct Inquiry via WhatsApp</li>
+                            <li><i data-lucide="check" class="check-icon"></i> standard Marketplace Search Index</li>
+                            <li><i data-lucide="check" class="check-icon"></i> Interactive Harvest Map Guides</li>
+                            <li class="disabled"><i data-lucide="x" class="x-icon"></i> Bulk Bidding Console</li>
+                            <li class="disabled"><i data-lucide="x" class="x-icon"></i> Dedicated Procurement Manager</li>
+                        </ul>
+                        <button class="btn btn-outline w-full plan-cta" data-plan="Eco Sourcing">Get Started</button>
+                    </div>
+
+                    <div class="plan-card premium">
+                        <div class="premium-badge">Commercial</div>
+                        <div class="plan-header">
+                            <h3>Enterprise Source</h3>
+                            <div class="price">₹1,999<span>/month</span></div>
+                        </div>
+                        <ul class="plan-features">
+                            <li><i data-lucide="check" class="check-icon"></i> Direct API Access for Inventory integration</li>
+                            <li><i data-lucide="check" class="check-icon"></i> Batch Bidding & Forward Contract Tools</li>
+                            <li><i data-lucide="check" class="check-icon"></i> Premium Quality Reports & Audits</li>
+                            <li><i data-lucide="check" class="check-icon"></i> Priority Shipping Rates & Storage Hold</li>
+                            <li><i data-lucide="check" class="check-icon"></i> 24/7 Account Management Support</li>
+                        </ul>
+                        <button class="btn btn-primary w-full plan-cta" data-plan="Enterprise Source" data-price="1999">Go Pro</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+                <div class="analysis-grid">
+                    <!-- Market Sizing -->
+                    <div class="market-card animate-slide-in">
+                        <h3><i data-lucide="bar-chart-4" style="color: var(--clr-primary);"></i> Market Sizing & projected Growth</h3>
+                        <div class="market-highlight-box">
+                            <h4>Indian Agriculture Market</h4>
+                            <p style="font-size: 1.4rem; font-weight: 800; color: var(--clr-primary); margin-bottom: 5px;">USD 450 Billion+</p>
+                            <p style="font-size: 0.9rem; color: var(--clr-text);">Forms the backbone of the economy, contributing ~18% of India's GDP and employing over 50% of the national workforce.</p>
+                        </div>
+                        
+                        <div class="market-highlight-box" style="background-color: hsl(38, 92%, 96%); border-left-color: var(--clr-gold);">
+                            <h4 style="color: var(--clr-gold);">Global Organic Farming Market</h4>
+                            <p style="font-size: 1.4rem; font-weight: 800; color: var(--clr-gold); margin-bottom: 5px;">USD 2.6 Billion+ (by 2028)</p>
+                            <p style="font-size: 0.9rem; color: var(--clr-text);">Growing rapidly at a CAGR of 22% as consumer preferences shift heavily toward chemical-free, sustainable produce.</p>
+                        </div>
+                    </div>
+
+                    <!-- Market Segmentation -->
+                    <div class="segment-card animate-slide-in delay-1">
+                        <h3><i data-lucide="pie-chart" style="color: var(--clr-primary); margin-right: 10px;"></i>Segmentation & Targeting</h3>
+                        <div class="segment-item">
+                            <strong>Geographic Segments</strong>
+                            <p>Primary focus: South India (Tamil Nadu, Kerala, Karnataka). Secondary: Pan-India expansion. Tertiary: Global export channels.</p>
+                        </div>
+                        <div class="segment-item">
+                            <strong>Target Audience</strong>
+                            <p>Individual investors seeking asset-backed stable returns; health-conscious urban retail consumers; wholesale commercial buyers.</p>
+                        </div>
+                        <div class="segment-item">
+                            <strong>Strategic Positioning</strong>
+                            <div class="position-bar">
+                                <i data-lucide="award"></i>
+                                <span style="font-size: 0.85rem; font-weight: 600; color: var(--clr-dark);">"Trusted Agri-Partner delivering direct market access, high-yield technology, and secure asset growth."</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Go To Market & Revenue Streams -->
+                <div style="margin-top: 60px;">
+                    <div class="section-header text-center" style="margin-bottom: 40px;">
+                        <span class="sub-title">Strategy & Business Model</span>
+                        <h2 class="section-title">Go-To-Market & Revenue Streams</h2>
+                    </div>
+
+                    <div class="gtm-grid">
+                        <div class="gtm-card">
+                            <i data-lucide="users-2" style="width: 32px; height: 32px;"></i>
+                            <h4>Strategic Partnerships</h4>
+                            <p>Collaborate with retail chains, food processors, and agricultural export houses for reliable demand mapping.</p>
+                            <span class="gtm-goal">B2B Integrations</span>
+                        </div>
+                        <div class="gtm-card">
+                            <i data-lucide="store" style="width: 32px; height: 32px;"></i>
+                            <h4>Direct Sales</h4>
+                            <p>Eliminate intermediaries by launching our own digital channels and farm outlets directly for regional consumers.</p>
+                            <span class="gtm-goal">D2C Farm-to-Table</span>
+                        </div>
+                        <div class="gtm-card">
+                            <i data-lucide="megaphone" style="width: 32px; height: 32px;"></i>
+                            <h4>Brand Presence</h4>
+                            <p>Build strong digital footprints focusing on sustainability, organic certs, and transparent farming practices.</p>
+                            <span class="gtm-goal">Digital Marketing</span>
+                        </div>
+                    </div>
+
+                    <div class="revenue-grid">
+                        <div class="revenue-card primary-stream">
+                            <span class="revenue-badge">Primary</span>
+                            <h4>Agri Investment</h4>
+                            <p>Initial capital inflows from investors participating in managed, high-yield land cultivation programs.</p>
+                        </div>
+                        <div class="revenue-card primary-stream">
+                            <span class="revenue-badge">Primary</span>
+                            <h4>Direct Produce Sales</h4>
+                            <p>Sale of high-quality organic vegetables, grains, and fruits to commercial hubs and retail outlets.</p>
+                        </div>
+                        <div class="revenue-card">
+                            <h4>Farm Management</h4>
+                            <p>Provision of operational consultancies, equipment rentals, and agronomy supervision services.</p>
+                        </div>
+                        <div class="revenue-card">
+                            <h4>Export Sales</h4>
+                            <p>Premium margins through global supply contracts for targeted high-demand crops.</p>
+                        </div>
+                        <div class="revenue-card">
+                            <h4>Value-Added Products</h4>
+                            <p>Processing raw crops into packed goods (e.g. organic powders, oils) to capture higher margins.</p>
+                        </div>
+                        <div class="revenue-card">
+                            <h4>Bulk Partnerships</h4>
+                            <p>Contract farming opportunities for hotels, hospitals, and corporate cafeteria supply chains.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Expansion Roadmap & SWOT Analysis Section (NEW) -->
+        <section class="roadmap-section section-padding" id="roadmap" style="background-color: var(--clr-white);">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="sub-title">Growth & Risk Profiles</span>
+                    <h2 class="section-title">Expansion Roadmap & SWOT Analysis</h2>
+                    <p class="section-desc">We follow a structured phase-by-phase scaling roadmap while proactively managing our operational risk matrix.</p>
+                </div>
+
+                <div class="roadmap-timeline" style="margin-bottom: 80px;">
+                    <div class="roadmap-phase">
+                        <h3>Phase 1: Foundation & Network</h3>
+                        <ul class="roadmap-list">
+                            <li>
+                                <i data-lucide="check-square"></i>
+                                <div>
+                                    <strong>Cultivation Capacity Scale-up</strong>
+                                    <p>Acquiring and developing 10+ acres of organic farming land under our direct management systems.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <i data-lucide="check-square"></i>
+                                <div>
+                                    <strong>Supplier & Logistics Network</strong>
+                                    <p>Onboarding local farmers and streamlining storage and cold-chain transport configurations.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <i data-lucide="check-square"></i>
+                                <div>
+                                    <strong>Brand Footprint Launch</strong>
+                                    <p>Increasing local brand presence through regional outlets and community-supported agriculture.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="roadmap-phase phase-2">
+                        <h3>Phase 2: Global Export & Tech Integration</h3>
+                        <ul class="roadmap-list">
+                            <li>
+                                <i data-lucide="arrow-right-circle"></i>
+                                <div>
+                                    <strong>Global Export Channel Integration</strong>
+                                    <p>Opening procurement contracts with international buyers in Middle East and South-East Asia.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <i data-lucide="arrow-right-circle"></i>
+                                <div>
+                                    <strong>Advanced Agritech Implementation</strong>
+                                    <p>Integrating climate-controlled greenhouses, automated micro-irrigation, and crop health drone monitoring.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <i data-lucide="arrow-right-circle"></i>
+                                <div>
+                                    <strong>Value Chain Expansion</strong>
+                                    <p>Launching processed value-added products and offering full contract farming packages to enterprise buyers.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- SWOT Analysis -->
+                <div class="swot-grid">
+                    <div class="swot-card strength">
+                        <h3><i data-lucide="trending-up"></i> Strengths</h3>
+                        <ul class="swot-list">
+                            <li><i data-lucide="check" style="color: var(--clr-primary);"></i> Experienced management team in agri operations & strategy</li>
+                            <li><i data-lucide="check" style="color: var(--clr-primary);"></i> Eco-friendly, organic, and sustainable farming methods</li>
+                            <li><i data-lucide="check" style="color: var(--clr-primary);"></i> Asset-backed agricultural investment models</li>
+                            <li><i data-lucide="check" style="color: var(--clr-primary);"></i> Standardized crop quality with high yield capability</li>
+                        </ul>
+                    </div>
+
+                    <div class="swot-card weakness">
+                        <h3><i data-lucide="alert-circle"></i> Weaknesses</h3>
+                        <ul class="swot-list">
+                            <li><i data-lucide="alert-triangle" style="color: var(--clr-gold);"></i> High initial capital required for land development</li>
+                            <li><i data-lucide="alert-triangle" style="color: var(--clr-gold);"></i> High dependence on environmental conditions & soil health</li>
+                            <li><i data-lucide="alert-triangle" style="color: var(--clr-gold);"></i> Initial stabilization cycle required for organic crops</li>
+                        </ul>
+                    </div>
+
+                    <div class="swot-card opportunity">
+                        <h3><i data-lucide="plus-circle"></i> Opportunities</h3>
+                        <ul class="swot-list">
+                            <li><i data-lucide="arrow-up-right" style="color: hsl(200, 70%, 40%);"></i> High projected CAGR of 22% in the organic food segment</li>
+                            <li><i data-lucide="arrow-up-right" style="color: hsl(200, 70%, 40%);"></i> Untapped export potential for Indian organic crops globally</li>
+                            <li><i data-lucide="arrow-up-right" style="color: hsl(200, 70%, 40%);"></i> Scaling direct-to-consumer digital food distribution</li>
+                        </ul>
+                    </div>
+
+                    <div class="swot-card threat">
+                        <h3><i data-lucide="minus-circle"></i> Threats</h3>
+                        <ul class="swot-list">
+                            <li><i data-lucide="x" style="color: var(--clr-danger);"></i> Volatile wholesale market prices and trade policies</li>
+                            <li><i data-lucide="x" style="color: var(--clr-danger);"></i> Adverse climate shifts, droughts, or water scarcity issues</li>
+                            <li><i data-lucide="x" style="color: var(--clr-danger);"></i> Local pest infestations or unexpected crop diseases</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Fund Utilization Section (NEW) -->
+        <section class="funds-section section-padding" id="funding" style="background-color: var(--clr-light);">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="sub-title">Financial Allocation</span>
+                    <h2 class="section-title">Fund Utilization & Strategy</h2>
+                    <p class="section-desc">Our planned grant funding of ₹20 Lakhs is strategically allocated to accelerate capacity development, operations, and technology deployment.</p>
+                </div>
+
+                <div class="funds-grid">
+                    <div class="funds-text">
+                        <h3>Allocation Breakdown</h3>
+                        <p>We prioritize critical elements like human resources, input acquisition, and product development to ensure operational scaling and long-term sustainability.</p>
+                        
+                        <div class="funds-progress-list">
+                            <div class="fund-progress-item">
+                                <div class="fund-progress-header">
+                                    <span>Human Resources</span>
+                                    <span>22.5% (&nbsp;₹4.5 Lakhs&nbsp;)</span>
+                                </div>
+                                <div class="fund-bar-bg">
+                                    <div class="fund-bar-fill" style="width: 22.5%;"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="fund-progress-item">
+                                <div class="fund-progress-header">
+                                    <span>Product Development</span>
+                                    <span>20% (&nbsp;₹4.0 Lakhs&nbsp;)</span>
+                                </div>
+                                <div class="fund-bar-bg">
+                                    <div class="fund-bar-fill" style="width: 20%; background-color: var(--clr-accent);"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="fund-progress-item">
+                                <div class="fund-progress-header">
+                                    <span>Technology Development</span>
+                                    <span>17.5% (&nbsp;₹3.5 Lakhs&nbsp;)</span>
+                                </div>
+                                <div class="fund-bar-bg">
+                                    <div class="fund-bar-fill" style="width: 17.5%; background-color: var(--clr-gold);"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="fund-progress-item">
+                                <div class="fund-progress-header">
+                                    <span>Raw Materials & Inputs</span>
+                                    <span>15% (&nbsp;₹3.0 Lakhs&nbsp;)</span>
+                                </div>
+                                <div class="fund-bar-bg">
+                                    <div class="fund-bar-fill" style="width: 15%;"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="fund-progress-item">
+                                <div class="fund-progress-header">
+                                    <span>Operations & Field Expenses</span>
+                                    <span>15% (&nbsp;₹3.0 Lakhs&nbsp;)</span>
+                                </div>
+                                <div class="fund-bar-bg">
+                                    <div class="fund-bar-fill" style="width: 15%; background-color: var(--clr-accent);"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="fund-progress-item">
+                                <div class="fund-progress-header">
+                                    <span>Research & Testing</span>
+                                    <span>10% (&nbsp;₹2.0 Lakhs&nbsp;)</span>
+                                </div>
+                                <div class="fund-bar-bg">
+                                    <div class="fund-bar-fill" style="width: 10%; background-color: var(--clr-gold);"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="funds-meta">
+                        <h4>Total Grant Funding</h4>
+                        <div class="funds-amount">₹20 Lakhs</div>
+                        <p>Approved allocation to support the initial foundation phase of Adhiraiyan Agro Solution Private Limited.</p>
+                        
+                        <ul class="funds-benefit-list">
+                            <li><i data-lucide="check-circle-2"></i> Quality farm input sourcing</li>
+                            <li><i data-lucide="check-circle-2"></i> Field team training & support</li>
+                            <li><i data-lucide="check-circle-2"></i> Digital platform development</li>
+                            <li><i data-lucide="check-circle-2"></i> Soil testing & seed analysis</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Leadership Team Section (NEW) -->
+        <section class="team-section section-padding" id="team" style="background-color: var(--clr-white);">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="sub-title">Directors</span>
+                    <h2 class="section-title">Leadership Team</h2>
+                    <p class="section-desc">Our directors combine agricultural expertise, technological capability, and strategic vision to lead sustainable growth.</p>
+                </div>
+
+                <div class="team-grid">
+                    <!-- Director 1 -->
+                    <div class="team-card">
+                        <div class="team-avatar-wrapper">
+                            <div class="team-avatar-icon"><i data-lucide="tractor"></i></div>
+                        </div>
+                        <div class="team-body">
+                            <h4 class="team-name">Murugesan Lavanya</h4>
+                            <span class="team-role">Director - Agri Operations</span>
+                            <p class="team-bio">Manages end-to-end farm cultivation, crop scheduling, soil health administration, and sustainable cultivation practices.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Director 2 -->
+                    <div class="team-card">
+                        <div class="team-avatar-wrapper">
+                            <div class="team-avatar-icon"><i data-lucide="coins"></i></div>
+                        </div>
+                        <div class="team-body">
+                            <h4 class="team-name">Murugesan Kalpana</h4>
+                            <span class="team-role">Director - Finance & HR</span>
+                            <p class="team-bio">Supervises financial management, accounting audits, compliance controls, and human resource administration.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Director 3 -->
+                    <div class="team-card">
+                        <div class="team-avatar-wrapper">
+                            <div class="team-avatar-icon"><i data-lucide="compass"></i></div>
+                        </div>
+                        <div class="team-body">
+                            <h4 class="team-name">Marimuthu Viswaprakash</h4>
+                            <span class="team-role">Director - Strategy & GTM</span>
+                            <p class="team-bio">Drives business strategy, corporate planning, partnership networking, and go-to-market execution plans.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Director 4 -->
+                    <div class="team-card">
+                        <div class="team-avatar-wrapper">
+                            <div class="team-avatar-icon"><i data-lucide="code"></i></div>
+                        </div>
+                        <div class="team-body">
+                            <h4 class="team-name">Mohanraj</h4>
+                            <span class="team-role">Director - Tech & Logistics</span>
+                            <p class="team-bio">Leads digital platform developments, farm-monitoring integrations, and supply chain logistics operations.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- API / Admin Console Feature teaser -->
+        <section class="admin-teaser-section section-padding" id="admin-trigger">
+            <div class="container">
+                <div class="admin-teaser-card">
+                    <div class="teaser-content">
+                        <span class="teaser-tag">Agribusiness Suite</span>
+                        <h2>Admin Dashboard & Client Management APIs</h2>
+                        <p>Manage system client details, catalog items, and logistics integrations. Register clients and directly export critical data coordinates to field teams using formatted WhatsApp share templates.</p>
+                        <div class="teaser-buttons">
+                            <button class="btn btn-primary" id="btn-trigger-admin-panel">
+                                <i data-lucide="shield-check"></i> Open Admin Portal
+                            </button>
+                        </div>
+                    </div>
+                    <div class="teaser-visual">
+                        <div class="dashboard-mock">
+                            <div class="mock-header">
+                                <div class="mock-dot"></div>
+                                <div class="mock-dot"></div>
+                                <div class="mock-dot"></div>
+                                <span class="mock-title">Adhiraiyan Agro API Console</span>
+                            </div>
+                            <div class="mock-body">
+                                <div class="mock-sidebar">
+                                    <div class="mock-menu-item active"></div>
+                                    <div class="mock-menu-item"></div>
+                                    <div class="mock-menu-item"></div>
+                                </div>
+                                <div class="mock-main">
+                                    <div class="mock-widget">
+                                        <span class="widget-title">Active Clients</span>
+                                        <span class="widget-val">128 API Connections</span>
+                                    </div>
+                                    <div class="mock-widget">
+                                        <span class="widget-title">WhatsApp Shares</span>
+                                        <span class="widget-val">482 Shared Logs</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact-section section-padding" id="contact">
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <div class="logo-area">
+                            <i data-lucide="sprout" class="logo-icon"></i>
+                            <span class="logo-text">Adhiraiyan<span> Agro</span></span>
+                        </div>
+                        <h2>Get In Touch With Adhiraiyan Agro</h2>
+                        <p>Have questions about agricultural investments, direct produce sourcing, farmer partnerships, or logistics? Write to us, or start a live support chat.</p>
+                        
+                        <div class="contact-methods">
+                            <div class="contact-method">
+                                <i data-lucide="mail"></i>
+                                <div>
+                                    <h4>Email Address</h4>
+                                    <p>info@adhiraiyanagro.com</p>
+                                </div>
+                            </div>
+                            <div class="contact-method">
+                                <i data-lucide="phone"></i>
+                                <div>
+                                    <h4>Helpline / WhatsApp Support</h4>
+                                    <p>+91 93424 49732</p>
+                                </div>
+                            </div>
+                            <div class="contact-method">
+                                <i data-lucide="map-pin"></i>
+                                <div>
+                                    <h4>Corporate Presence</h4>
+                                    <p>Tamil Nadu, India</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="whatsapp-btn-wrapper">
+                            <a href="https://wa.me/919342449732?text=Hello%20Adhiraiyan%20Agro%20Support%2C%20I%20have%20an%20inquiry%20regarding..." target="_blank" class="btn btn-whatsapp-direct">
+                                <i data-lucide="message-circle"></i> Chat on WhatsApp
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="contact-card">
+                        <h3>Send a Direct Message</h3>
+                        <form id="contact-form" class="custom-form">
+                            <div class="form-group">
+                                <label for="contact-name">Full Name</label>
+                                <input type="text" id="contact-name" required placeholder="John Doe">
+                            </div>
+                            <div class="form-group">
+                                <label for="contact-email">Email Address</label>
+                                <input type="email" id="contact-email" required placeholder="john@example.com">
+                            </div>
+                            <div class="form-group">
+                                <label for="contact-subject">Topic / Subject</label>
+                                <select id="contact-subject">
+                                    <option value="General inquiry">General Inquiry</option>
+                                    <option value="Farmer Registration">Farmer Registration Issue</option>
+                                    <option value="Produce Sourcing">Bulk Sourcing Request</option>
+                                    <option value="Membership Plans">Membership Plan Assistance</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="contact-message">Your Message</label>
+                                <textarea id="contact-message" rows="4" required placeholder="Type your message details here..."></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary w-full">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <div class="nav-logo">
+                    <i data-lucide="sprout" class="logo-icon"></i>
+                    <span class="logo-text">Adhiraiyan<span> Agro</span></span>
+                </div>
+                <p>Transforming Indian agriculture through sustainable practices, direct-to-market farming, and secure investment opportunities.</p>
+                <div class="social-links">
+                    <a href="#"><i data-lucide="facebook"></i></a>
+                    <a href="#"><i data-lucide="twitter"></i></a>
+                    <a href="#"><i data-lucide="instagram"></i></a>
+                    <a href="#"><i data-lucide="linkedin"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-links">
+                <h4>Marketplace Links</h4>
+                <a href="#marketplace">All Crops</a>
+                <a href="#marketplace">Vegetables</a>
+                <a href="#marketplace">Fruits</a>
+                <a href="#marketplace">Wholesale Orders</a>
+            </div>
+
+            <div class="footer-links">
+                <h4>Resources</h4>
+                <a href="#solutions">Solutions & Services</a>
+                <a href="#about">About Project</a>
+                <a href="#roadmap">SWOT & Roadmap</a>
+                <a href="#membership">Membership Options</a>
+            </div>
+
+            <div class="footer-links">
+                <h4>Legal / Secure</h4>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms & Conditions</a>
+                <a href="#">Farmer Agreement</a>
+                <a href="#">API Documentation</a>
+            </div>
+        </div>
+
+        <div class="container footer-bottom">
+            <p>&copy; 2026 Adhiraiyan Agro Solution Private Limited. All Rights Reserved. Empowering farmers and buyers.</p>
+        </div>
+    </footer>
+
+    <!-- MODAL PORTALS -->
+
+    <!-- 1. Authentication Modal (Login / Register) -->
+    <div class="modal" id="modal-auth">
+        <div class="modal-content auth-modal-content">
+            <button class="modal-close" id="btn-close-auth"><i data-lucide="x"></i></button>
+            
+            <div class="auth-tabs">
+                <button class="auth-tab active" id="tab-login" data-target="panel-login">Sign In</button>
+                <button class="auth-tab" id="tab-register" data-target="panel-register">Register</button>
+            </div>
+
+            <!-- Login Panel -->
+            <div class="auth-panel active" id="panel-login">
+                <form id="form-login" class="custom-form">
+                    <div class="form-group">
+                        <label for="login-email">Email Address</label>
+                        <input type="email" id="login-email" required placeholder="your@email.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="login-password">Password</label>
+                        <input type="password" id="login-password" required placeholder="••••••••">
+                    </div>
+                    <div class="form-group">
+                        <label for="login-role">User Type</label>
+                        <select id="login-role">
+                            <option value="farmer">Farmer</option>
+                            <option value="buyer">Buyer</option>
+                            <option value="admin">Platform Admin</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-full">Sign In</button>
+                </form>
+            </div>
+
+            <!-- Register Panel -->
+            <div class="auth-panel" id="panel-register">
+                <div class="register-role-toggle">
+                    <button class="role-btn active" data-role="farmer">Farmer Registration</button>
+                    <button class="role-btn" data-role="buyer">Buyer Registration</button>
+                </div>
+
+                <!-- Farmer Register Form -->
+                <form id="form-register-farmer" class="custom-form register-form active">
+                    <h4 class="form-sub-header">Personal Details</h4>
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="farmer-name">Full Name</label>
+                            <input type="text" id="farmer-name" required placeholder="Ram Kumar">
+                        </div>
+                        <div class="form-group">
+                            <label for="farmer-phone">WhatsApp Phone Number</label>
+                            <input type="tel" id="farmer-phone" required placeholder="9876543210">
+                        </div>
+                    </div>
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="farmer-email">Email Address</label>
+                            <input type="email" id="farmer-email" required placeholder="ram@example.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="farmer-password">Password</label>
+                            <input type="password" id="farmer-password" required placeholder="••••••••">
+                        </div>
+                    </div>
+
+                    <h4 class="form-sub-header">Agriculture Details</h4>
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="farmer-location">Location / District</label>
+                            <input type="text" id="farmer-location" required placeholder="Coimbatore, TN">
+                        </div>
+                        <div class="form-group">
+                            <label for="farmer-acres">Farm Size (Acres)</label>
+                            <input type="number" id="farmer-acres" placeholder="5" min="0" step="0.5">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="farmer-crops">Primary Crops Cultivated</label>
+                        <input type="text" id="farmer-crops" placeholder="Tomato, Paddy, Turmeric">
+                    </div>
+
+                    <button type="submit" class="btn btn-primary w-full">Complete Farmer Registration</button>
+                </form>
+
+                <!-- Buyer Register Form -->
+                <form id="form-register-buyer" class="custom-form register-form">
+                    <div class="form-group">
+                        <label for="buyer-name">Company / Individual Name</label>
+                        <input type="text" id="buyer-name" required placeholder="Fresh Foods Ltd">
+                    </div>
+                    <div class="form-group">
+                        <label for="buyer-phone">WhatsApp Contact</label>
+                        <input type="tel" id="buyer-phone" required placeholder="9876543210">
+                    </div>
+                    <div class="form-group">
+                        <label for="buyer-email">Email Address</label>
+                        <input type="email" id="buyer-email" required placeholder="procure@freshfoods.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="buyer-password">Password</label>
+                        <input type="password" id="buyer-password" required placeholder="••••••••">
+                    </div>
+                    <div class="form-group">
+                        <label for="buyer-type">Buyer Classification</label>
+                        <select id="buyer-type">
+                            <option value="Wholesaler">Wholesale Distributor</option>
+                            <option value="Restaurant">Hotel / Restaurant Sourcing</option>
+                            <option value="Retailer">Local Vegetable Shop / Retailer</option>
+                            <option value="Individual">Individual Consumer</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-full">Complete Buyer Registration</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2. Farmer Dashboard Modal -->
+    <div class="modal" id="modal-farmer-dashboard">
+        <div class="modal-content dashboard-modal-content">
+            <button class="modal-close" id="btn-close-farmer-db"><i data-lucide="x"></i></button>
+            <div class="dashboard-wrapper">
+                <aside class="dashboard-sidebar">
+                    <div class="user-profile-summary">
+                        <div class="user-avatar"><i data-lucide="user"></i></div>
+                        <h3 id="db-farmer-name">Farmer Name</h3>
+                        <span class="user-badge"><i data-lucide="shield-check"></i> Verified Seller</span>
+                    </div>
+                    <nav class="db-nav">
+                        <button class="db-nav-btn active" data-panel="db-panel-upload"><i data-lucide="plus-circle"></i> Upload Produce</button>
+                        <button class="db-nav-btn" data-panel="db-panel-mycrops"><i data-lucide="leaf"></i> My Listings</button>
+                        <button class="db-nav-btn" data-panel="db-panel-profile"><i data-lucide="settings"></i> Profile Settings</button>
+                        <button class="db-nav-btn logout-btn" id="farmer-logout"><i data-lucide="log-out"></i> Log Out</button>
+                    </nav>
+                </aside>
+
+                <div class="dashboard-main">
+                    <!-- Tab 1: Upload Produce -->
+                    <div class="db-panel active" id="db-panel-upload">
+                        <h2>Upload New Produce Listing</h2>
+                        <p class="panel-desc">List details about your current crop harvest to make it visible to potential buyers in the marketplace.</p>
+                        
+                        <form id="form-upload-product" class="custom-form">
+                            <div class="form-grid">
+                                <div class="form-group">
+                                    <label for="prod-name">Crop / Product Name</label>
+                                    <input type="text" id="prod-name" required placeholder="Premium Country Tomato">
+                                </div>
+                                <div class="form-group">
+                                    <label for="prod-category">Category</label>
+                                    <select id="prod-category">
+                                        <option value="Vegetables">Vegetables</option>
+                                        <option value="Fruits">Fruits</option>
+                                        <option value="Grains">Grains</option>
+                                        <option value="Spices">Spices & Herbs</option>
+                                        <option value="Others">Others</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="form-grid">
+                                <div class="form-group">
+                                    <label for="prod-price">Price (₹ per Unit)</label>
+                                    <input type="number" id="prod-price" required placeholder="35" min="1">
+                                </div>
+                                <div class="form-group">
+                                    <label for="prod-unit">Unit of Price</label>
+                                    <select id="prod-unit">
+                                        <option value="kg">Per kg</option>
+                                        <option value="quintal">Per Quintal (100kg)</option>
+                                        <option value="box">Per Box</option>
+                                        <option value="piece">Per Piece</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="form-grid">
+                                <div class="form-group">
+                                    <label for="prod-qty">Available Quantity</label>
+                                    <input type="number" id="prod-qty" required placeholder="500" min="1">
+                                </div>
+                                <div class="form-group">
+                                    <label for="prod-img">Product Image Sample (Optional)</label>
+                                    <select id="prod-img">
+                                        <option value="default-veg">Fresh Greens / Vegetables Image</option>
+                                        <option value="default-fruit">Fresh Harvest Fruits Image</option>
+                                        <option value="default-grain">Cereal Grains Image</option>
+                                        <option value="default-spices">Assorted Spices Image</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="prod-desc">Description & Harvest Timeline</label>
+                                <textarea id="prod-desc" rows="3" placeholder="Harvesting starts this weekend. Fully organic cultivation. Clean and graded packaging available."></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary w-full">Publish Listing to Marketplace</button>
+                        </form>
+                    </div>
+
+                    <!-- Tab 2: My Listings -->
+                    <div class="db-panel" id="db-panel-mycrops">
+                        <h2>My Produce Listings</h2>
+                        <p class="panel-desc">Manage your existing marketplace active posts. You can delete items that have been fully sold.</p>
+                        
+                        <div class="db-table-wrapper">
+                            <table class="db-table">
+                                <thead>
+                                    <tr>
+                                        <th>Produce</th>
+                                        <th>Category</th>
+                                        <th>Price</th>
+                                        <th>Available Qty</th>
+                                        <th>Status</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="db-my-listings-tbody">
+                                    <!-- Dynamic rows from JS -->
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <!-- Tab 3: Profile Settings -->
+                    <div class="db-panel" id="db-panel-profile">
+                        <h2>Profile Settings</h2>
+                        <p class="panel-desc">Manage agricultural details, farm land size, crop categories and contact info.</p>
+                        
+                        <form id="form-update-profile" class="custom-form">
+                            <div class="form-grid">
+                                <div class="form-group">
+                                    <label for="profile-name">Full Name</label>
+                                    <input type="text" id="profile-name" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="profile-phone">WhatsApp Number</label>
+                                    <input type="tel" id="profile-phone" required>
+                                </div>
+                            </div>
+                            <div class="form-grid">
+                                <div class="form-group">
+                                    <label for="profile-location">District / Location</label>
+                                    <input type="text" id="profile-location" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="profile-acres">Total Cultivation Acres</label>
+                                    <input type="number" id="profile-acres" step="0.5">
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Update Profile Settings</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 3. Admin Console Modal -->
+    <div class="modal" id="modal-admin-dashboard">
+        <div class="modal-content admin-modal-content">
+            <button class="modal-close" id="btn-close-admin-db"><i data-lucide="x"></i></button>
+            <div class="dashboard-wrapper">
+                <aside class="dashboard-sidebar">
+                    <div class="user-profile-summary">
+                        <div class="user-avatar admin-avatar"><i data-lucide="shield"></i></div>
+                        <h3>Administrator Console</h3>
+                        <span class="user-badge admin-badge">System Root</span>
+                    </div>
+                    <nav class="db-nav">
+                        <button class="admin-nav-btn active" data-panel="admin-panel-users"><i data-lucide="users"></i> Manage Members</button>
+                        <button class="admin-nav-btn" data-panel="admin-panel-products"><i data-lucide="package-search"></i> Manage Products</button>
+                        <button class="admin-nav-btn" data-panel="admin-panel-addclient"><i data-lucide="user-plus"></i> Add Client Portal</button>
+                        <button class="db-nav-btn logout-btn" id="admin-logout"><i data-lucide="log-out"></i> Log Out</button>
+                    </nav>
+                </aside>
+
+                <div class="dashboard-main">
+                    <!-- Tab 1: Manage Members -->
+                    <div class="admin-panel active" id="admin-panel-users">
+                        <h2>System Registered Members</h2>
+                        <p class="panel-desc">Overview of active farmers, retail buyers, and enterprise clients enrolled in Adhiraiyan Agro.</p>
+                        
+                        <div class="admin-stats-row">
+                            <div class="stat-mini-card">
+                                <h4>Farmers</h4>
+                                <p id="admin-stat-farmers">0</p>
+                            </div>
+                            <div class="stat-mini-card">
+                                <h4>Buyers</h4>
+                                <p id="admin-stat-buyers">0</p>
+                            </div>
+                            <div class="stat-mini-card">
+                                <h4>Total Users</h4>
+                                <p id="admin-stat-total">0</p>
+                            </div>
+                        </div>
+
+                        <div class="db-table-wrapper">
+                            <table class="db-table">
+                                <thead>
+                                    <tr>
+                                        <th>Name</th>
+                                        <th>Role</th>
+                                        <th>Email</th>
+                                        <th>Phone</th>
+                                        <th>Details</th>
+                                        <th>WhatsApp Link</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="admin-users-tbody">
+                                    <!-- Dynamic rows from JS -->
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <!-- Tab 2: Manage Products -->
+                    <div class="admin-panel" id="admin-panel-products">
+                        <h2>Marketplace Catalog Control</h2>
+                        <p class="panel-desc">Approve or remove products list published in the main buyer catalog.</p>
+                        
+                        <div class="db-table-wrapper">
+                            <table class="db-table">
+                                <thead>
+                                    <tr>
+                                        <th>Product</th>
+                                        <th>Farmer</th>
+                                        <th>Price</th>
+                                        <th>Quantity</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="admin-products-tbody">
+                                    <!-- Dynamic rows from JS -->
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <!-- Tab 3: Add Client -->
+                    <div class="admin-panel" id="admin-panel-addclient">
+                        <h2>Register Partners & Clients</h2>
+                        <p class="panel-desc">Quickly configure external client accounts, B2B procurement partners, and warehouse links. Share details via WhatsApp formatting.</p>
+                        
+                        <form id="form-admin-add-client" class="custom-form">
+                            <div class="form-grid">
+                                <div class="form-group">
+                                    <label for="client-name">Company / Partner Name</label>
+                                    <input type="text" id="client-name" required placeholder="Tiruppur Vegetable Cold Storage">
+                                </div>
+                                <div class="form-group">
+                                    <label for="client-poc">Point of Contact Person</label>
+                                    <input type="text" id="client-poc" required placeholder="Mr. Selvam">
+                                </div>
+                            </div>
+                            <div class="form-grid">
+                                <div class="form-group">
+                                    <label for="client-phone">WhatsApp Mobile</label>
+                                    <input type="tel" id="client-phone" required placeholder="9876543210">
+                                </div>
+                                <div class="form-group">
+                                    <label for="client-email">Email Address</label>
+                                    <input type="email" id="client-email" required placeholder="selvam@tvcold.com">
+                                </div>
+                            </div>
+                            <div class="form-grid">
+                                <div class="form-group">
+                                    <label for="client-location">Region / Warehouse Hub</label>
+                                    <input type="text" id="client-location" required placeholder="Tiruppur, Tamil Nadu">
+                                </div>
+                                <div class="form-group">
+                                    <label for="client-type">Partnership Type</label>
+                                    <select id="client-type">
+                                        <option value="B2B Buyer">B2B Wholesale Buyer</option>
+                                        <option value="Logistics Partner">Logistics & Cargo Partner</option>
+                                        <option value="Cold Storage">Cold Storage Facility</option>
+                                        <option value="Export Agent">Export Coordinator</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary">Create Client Account</button>
+                        </form>
+
+                        <h3 style="margin-top: 2rem; margin-bottom: 1rem;">Active B2B Clients</h3>
+                        <div class="db-table-wrapper">
+                            <table class="db-table">
+                                <thead>
+                                    <tr>
+                                        <th>Company</th>
+                                        <th>POC Name</th>
+                                        <th>Region</th>
+                                        <th>Classification</th>
+                                        <th>Contact</th>
+                                        <th>Action (WhatsApp Share)</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="admin-clients-tbody">
+                                    <!-- Dynamic rows from JS -->
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 4. Gatekeeper Pin Modal (Admin Security) -->
+    <div class="modal" id="modal-admin-gatekeeper">
+        <div class="modal-content gatekeeper-modal-content">
+            <button class="modal-close" id="btn-close-gatekeeper"><i data-lucide="x"></i></button>
+            <div class="gatekeeper-body text-center">
+                <i data-lucide="shield-alert" class="gatekeeper-icon"></i>
+                <h2>Security Authentication</h2>
+                <p>Admin verification required. Please input the platform system access code to enter the command console.</p>
+                <form id="form-gatekeeper" class="custom-form">
+                    <div class="form-group">
+                        <input type="password" id="gatekeeper-pin" placeholder="Enter Access Code (admin123)" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-full">Unlock Administration Console</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- 5. Mock Checkout / Payment Gateway Modal -->
+    <div class="modal" id="modal-checkout">
+        <div class="modal-content checkout-modal-content">
+            <button class="modal-close" id="btn-close-checkout"><i data-lucide="x"></i></button>
+            <div class="checkout-wrapper">
+                <div class="checkout-header text-center">
+                    <i data-lucide="credit-card" class="payment-icon"></i>
+                    <h2>Secure Payment Gateway</h2>
+                    <p>Adhiraiyan Agro Payment Settlement Gateway</p>
+                </div>
+                
+                <div class="order-summary-card">
+                    <h4>Subscription Membership Plan</h4>
+                    <div class="summary-row">
+                        <span id="checkout-plan-name">Harvest Master (Farmer)</span>
+                        <span id="checkout-plan-price">₹499.00</span>
+                    </div>
+                    <hr>
+                    <div class="summary-row total">
+                        <span>Total Due</span>
+                        <span id="checkout-plan-total">₹499.00</span>
+                    </div>
+                </div>
+
+                <form id="form-payment" class="custom-form">
+                    <div class="payment-tabs">
+                        <button type="button" class="pay-tab active" data-paymethod="card"><i data-lucide="credit-card"></i> Card</button>
+                        <button type="button" class="pay-tab" data-paymethod="upi"><i data-lucide="smartphone"></i> UPI / QR</button>
+                    </div>
+
+                    <!-- Card Form -->
+                    <div class="pay-panel active" id="pay-panel-card">
+                        <div class="form-group">
+                            <label for="pay-card-num">Card Number</label>
+                            <input type="text" id="pay-card-num" placeholder="4111 2222 3333 4444" maxlength="19">
+                        </div>
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label for="pay-card-expiry">Expiry Date</label>
+                                <input type="text" id="pay-card-expiry" placeholder="MM/YY" maxlength="5">
+                            </div>
+                            <div class="form-group">
+                                <label for="pay-card-cvv">CVV</label>
+                                <input type="password" id="pay-card-cvv" placeholder="•••" maxlength="3">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- UPI Form -->
+                    <div class="pay-panel" id="pay-panel-upi">
+                        <div class="form-group">
+                            <label for="pay-upi-id">UPI ID (VPA)</label>
+                            <input type="text" id="pay-upi-id" placeholder="username@upi">
+                        </div>
+                        <div class="text-center qr-placeholder">
+                            <i data-lucide="qr-code"></i>
+                            <p>Or scan UPI QR code on the next step</p>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary w-full btn-lg" id="btn-submit-payment">
+                        Proceed Securely
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Floating Actions -->
+    <a href="https://wa.me/919342449732" target="_blank" class="floating-whatsapp-bubble" aria-label="Chat on WhatsApp">
+        <i data-lucide="message-circle"></i>
+    </a>
+
+    <!-- Notification Toast -->
+    <div class="toast" id="toast">
+        <div class="toast-content">
+            <i data-lucide="info" class="toast-icon"></i>
+            <span class="toast-message">Notification details...</span>
+        </div>
+    </div>
+
+    <!-- Custom Script -->
+    <script src="app.js"></script>
+</body>
+</html>

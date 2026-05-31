@@ -1,0 +1,23 @@
+{
+  "name": "adhiraiyanagro-landing-page",
+  "version": "1.0.0",
+  "description": "Premium Landing Page and Portal for Adhiraiyan Agro Solution",
+  "main": "index.html",
+  "scripts": {
+    "dev": "npx http-server -p 3000"
+  },
+  "dependencies": {
+    "pdf-parse": "^2.4.5"
+  },
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  },
+  "keywords": [
+    "agriculture",
+    "marketplace",
+    "farmers",
+    "buyers"
+  ],
+  "author": "Adhiraiyan Agro Solution Private Limited",
+  "license": "ISC"
+}
