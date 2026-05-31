@@ -179,7 +179,7 @@ img {
     left: 0;
     width: 100%;
     z-index: 1000;
-    background-color: transparent;
+    background-color: var(--clr-white);
     border-bottom: 1px solid transparent;
     transition: var(--transition);
     padding: 20px 0;
@@ -206,6 +206,12 @@ img {
     display: flex;
     align-items: center;
     gap: 10px;
+}
+
+.nav-logo-img {
+    height: 32px;
+    width: auto;
+    object-fit: contain;
 }
 
 .logo-icon {
@@ -483,6 +489,21 @@ img {
 .card-icon i {
     width: 32px;
     height: 32px;
+}
+
+.card-header-inline {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.card-header-inline .card-icon {
+    margin-bottom: 0;
+}
+
+.card-header-inline h3 {
+    margin-bottom: 0;
 }
 
 .about-card h3 {
@@ -1846,7 +1867,7 @@ img {
     }
     
     .products-grid {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: 1fr;
     }
     
     .plans-grid {
@@ -1854,7 +1875,7 @@ img {
         max-width: 450px;
     }
     
-    .services-grid {
+    .features-grid {
         grid-template-columns: 1fr;
     }
     

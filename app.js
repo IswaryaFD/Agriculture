@@ -11,21 +11,24 @@ document.addEventListener('DOMContentLoaded', () => {
     // ---------------------------------------------------------
     // Mock Database Initialization (Local Storage Persistence)
     // ---------------------------------------------------------
-    
+
     // Initial users
     const defaultUsers = [
-        { id: 'u1', name: 'Muthu Kumar', email: 'muthu@farm.com', password: 'password', role: 'farmer', phone: '9876543201', location: 'Pollachi, TN', acres: '10', crops: 'Coconut, Turmeric' },
+        { id: 'u1', name: 'Muthu Kumar', email: 'muthu@farm.com', password: 'password', role: 'farmer', phone: '9876543210', location: 'Pollachi, TN', acres: '10', crops: 'Coconut, Turmeric' },
         { id: 'u2', name: 'Saravana Traders', email: 'saravana@trade.com', password: 'password', role: 'buyer', phone: '9876543202', type: 'Wholesaler' },
         { id: 'u3', name: 'Admin Root', email: 'admin@adhiraiyanagro.com', password: 'admin', role: 'admin', phone: '919342449732' }
     ];
 
     // Initial products
     const defaultProducts = [
-        { id: 'p1', farmerId: 'u1', farmerName: 'Muthu Kumar', cropName: 'Organic Turmeric Finger', category: 'Spices', price: 145, unit: 'kg', qty: 2500, location: 'Pollachi, TN', img: 'default-spices', desc: 'Premium grade turmeric fingers. Fully organic cultivation. Cleaned and sun-dried.', phone: '9876543201' },
-        { id: 'p2', farmerId: 'u1', farmerName: 'Muthu Kumar', cropName: 'Fresh Organic Coconuts', category: 'Others', price: 28, unit: 'piece', qty: 8000, location: 'Pollachi, TN', img: 'default-veg', desc: 'Well-matured coconuts. Sourced directly from our groves. Average weight 600g.', phone: '9876543201' },
-        { id: 'p3', farmerId: 'farmer2', farmerName: 'Velusamy G.', category: 'Vegetables', cropName: 'Premium Country Tomatoes', price: 32, unit: 'kg', qty: 1500, location: 'Dharmapuri, TN', img: 'default-veg', desc: 'Harvesting starts tomorrow. Firm, medium-sized, native seeds. Handpicked.', phone: '9876599201' },
-        { id: 'p4', farmerId: 'farmer3', farmerName: 'Anitha Raj', category: 'Fruits', cropName: 'Salem Gundu Mangoes', price: 85, unit: 'kg', qty: 600, location: 'Salem, TN', img: 'default-fruit', desc: 'Naturally ripened Salem special mangoes. Extremely sweet and pulpy.', phone: '9876533201' },
-        { id: 'p5', farmerId: 'farmer4', farmerName: 'Sridhar R.', category: 'Grains', cropName: 'Ponni Raw Rice (Old)', price: 62, unit: 'kg', qty: 5000, location: 'Thanjavur, TN', img: 'default-grain', desc: '1-year old aged Ponni raw rice. Direct from mill. Excellent cooking quality.', phone: '9876544201' }
+        { id: 'p1', farmerId: 'u1', farmerName: 'Muthu Kumar', cropName: 'Organic Turmeric Finger', category: 'Spices', price: 145, unit: 'kg', qty: 2500, location: 'Pollachi, TN', img: 'default-spices', desc: 'Premium grade turmeric fingers. Fully organic cultivation. Cleaned and sun-dried.', phone: '9876543210' },
+        { id: 'p2', farmerId: 'u1', farmerName: 'Muthu Kumar', cropName: 'Fresh Organic Coconuts', category: 'Others', price: 28, unit: 'piece', qty: 8000, location: 'Pollachi, TN', img: 'default-veg', desc: 'Well-matured coconuts. Sourced directly from our groves. Average weight 600g.', phone: '9876543210' },
+        { id: 'p3', farmerId: 'u1', farmerName: 'Muthu Kumar', category: 'Vegetables', cropName: 'Premium Country Tomatoes', price: 32, unit: 'kg', qty: 1500, location: 'Dharmapuri, TN', img: 'default-veg', desc: 'Harvesting starts tomorrow. Firm, medium-sized, native seeds. Handpicked.', phone: '9876543210' },
+        { id: 'p4', farmerId: 'u1', farmerName: 'Muthu Kumar', category: 'Fruits', cropName: 'Salem Gundu Mangoes', price: 85, unit: 'kg', qty: 600, location: 'Salem, TN', img: 'default-fruit', desc: 'Naturally ripened Salem special mangoes. Extremely sweet and pulpy.', phone: '9876543210' },
+        { id: 'p5', farmerId: 'u1', farmerName: 'Muthu Kumar', category: 'Fruits', cropName: 'Organic Red Bananas', price: 45, unit: 'kg', qty: 300, location: 'Coimbatore, TN', img: 'default-fruit', desc: 'Naturally grown red bananas from our own farm. Rich in potassium.', phone: '9876543210' },
+        { id: 'p6', farmerId: 'u1', farmerName: 'Muthu Kumar', category: 'Vegetables', cropName: 'Fresh Ooty Carrots', price: 60, unit: 'kg', qty: 800, location: 'Ooty, TN', img: 'default-veg', desc: 'Freshly harvested, premium quality carrots from the Nilgiris.', phone: '9876543210' },
+        { id: 'p7', farmerId: 'u1', farmerName: 'Muthu Kumar', category: 'Grains', cropName: 'Ponni Raw Rice (Old)', price: 62, unit: 'kg', qty: 5000, location: 'Thanjavur, TN', img: 'default-grain', desc: '1-year old aged Ponni raw rice. Direct from mill. Excellent cooking quality.', phone: '9876543210' },
+        { id: 'p8', farmerId: 'u1', farmerName: 'Kumar', category: 'Fruits', cropName: 'Apple', price: 150, unit: 'kg', qty: 500, location: 'ooty', img: 'default-fruit', desc: 'Fresh ooty apple.', phone: '9876543210' }
     ];
 
     // Initial clients
@@ -53,7 +56,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // ---------------------------------------------------------
     // UI Selectors
     // ---------------------------------------------------------
-    
+
     // Nav elements
     const navbar = document.getElementById('navbar');
     const menuToggle = document.getElementById('menu-toggle');
@@ -101,13 +104,13 @@ document.addEventListener('DOMContentLoaded', () => {
     // ---------------------------------------------------------
     // Helper Functions
     // ---------------------------------------------------------
-    
+
     // Show Toast
     function showToast(message, iconName = 'info') {
         const toast = document.getElementById('toast');
         const toastMsg = toast.querySelector('.toast-message');
         const toastIcon = toast.querySelector('.toast-icon');
-        
+
         toastMsg.textContent = message;
         toastIcon.setAttribute('data-lucide', iconName);
         if (typeof lucide !== 'undefined') {
@@ -184,7 +187,7 @@ document.addEventListener('DOMContentLoaded', () => {
         tab.addEventListener('click', () => {
             authTabs.forEach(t => t.classList.remove('active'));
             authPanels.forEach(p => p.classList.remove('active'));
-            
+
             tab.classList.add('active');
             const targetId = tab.dataset.target;
             document.getElementById(targetId).classList.add('active');
@@ -281,7 +284,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (pin === 'admin123') {
             closeModal(modalGatekeeper);
             document.getElementById('gatekeeper-pin').value = '';
-            
+
             // Set session to admin
             const adminUser = users.find(u => u.role === 'admin') || { name: 'Admin Root', role: 'admin', phone: '919876543210' };
             currentUser = adminUser;
@@ -326,9 +329,9 @@ document.addEventListener('DOMContentLoaded', () => {
     // ---------------------------------------------------------
     function openFarmerDashboard() {
         if (!currentUser || currentUser.role !== 'farmer') return;
-        
+
         document.getElementById('db-farmer-name').textContent = currentUser.name;
-        
+
         // Populate profile settings form
         document.getElementById('profile-name').value = currentUser.name;
         document.getElementById('profile-phone').value = currentUser.phone || '';
@@ -367,18 +370,18 @@ document.addEventListener('DOMContentLoaded', () => {
     // Profile updates
     formUpdateProfile.addEventListener('submit', (e) => {
         e.preventDefault();
-        
+
         const idx = users.findIndex(u => u.id === currentUser.id);
         if (idx !== -1) {
             users[idx].name = document.getElementById('profile-name').value;
             users[idx].phone = document.getElementById('profile-phone').value;
             users[idx].location = document.getElementById('profile-location').value;
             users[idx].acres = document.getElementById('profile-acres').value;
-            
+
             currentUser = users[idx];
             sessionStorage.setItem('agri_session', JSON.stringify(currentUser));
             saveDB();
-            
+
             document.getElementById('db-farmer-name').textContent = currentUser.name;
             renderMarketplace();
             showToast('Farmer profile configuration updated!', 'settings');
@@ -389,9 +392,9 @@ document.addEventListener('DOMContentLoaded', () => {
     function renderFarmerListings() {
         const tbody = document.getElementById('db-my-listings-tbody');
         tbody.innerHTML = '';
-        
+
         const myProducts = products.filter(p => p.farmerId === currentUser.id);
-        
+
         if (myProducts.length === 0) {
             tbody.innerHTML = `<tr><td colspan="6" class="text-center" style="color: var(--clr-text-light);">No produce listed yet. Go to Upload Produce tab to list.</td></tr>`;
             return;
@@ -434,7 +437,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Upload product
     formUploadProduct.addEventListener('submit', (e) => {
         e.preventDefault();
-        
+
         const newProd = {
             id: 'p_' + Date.now(),
             farmerId: currentUser.id,
@@ -452,9 +455,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
         products.unshift(newProd);
         saveDB();
-        
+
         formUploadProduct.reset();
-        
+
         // Go back to listings panel
         document.querySelector('.db-nav-btn[data-panel="db-panel-mycrops"]').click();
         renderFarmerListings();
@@ -478,7 +481,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // ---------------------------------------------------------
     // Main Authentication Form Submissions
     // ---------------------------------------------------------
-    
+
     // Login
     formLogin.addEventListener('submit', (e) => {
         e.preventDefault();
@@ -487,16 +490,16 @@ document.addEventListener('DOMContentLoaded', () => {
         const role = document.getElementById('login-role').value;
 
         const matched = users.find(u => u.email === email && u.password === pass && u.role === role);
-        
+
         if (matched) {
             currentUser = matched;
             sessionStorage.setItem('agri_session', JSON.stringify(currentUser));
             updateAuthUI();
             closeModal(modalAuth);
             formLogin.reset();
-            
+
             showToast(`Logged in successfully as ${currentUser.name}!`, 'shield-check');
-            
+
             if (currentUser.role === 'farmer') {
                 openFarmerDashboard();
             } else if (currentUser.role === 'admin') {
@@ -511,7 +514,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Farmer Register
     formRegisterFarmer.addEventListener('submit', (e) => {
         e.preventDefault();
-        
+
         const email = document.getElementById('farmer-email').value;
         if (users.find(u => u.email === email)) {
             showToast('This email is already registered.', 'shield-alert');
@@ -536,10 +539,10 @@ document.addEventListener('DOMContentLoaded', () => {
         currentUser = newFarmer;
         sessionStorage.setItem('agri_session', JSON.stringify(currentUser));
         updateAuthUI();
-        
+
         closeModal(modalAuth);
         formRegisterFarmer.reset();
-        
+
         showToast('Farmer account registered successfully!', 'check');
         openFarmerDashboard();
     });
@@ -547,7 +550,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Buyer Register
     formRegisterBuyer.addEventListener('submit', (e) => {
         e.preventDefault();
-        
+
         const email = document.getElementById('buyer-email').value;
         if (users.find(u => u.email === email)) {
             showToast('This email is already registered.', 'shield-alert');
@@ -570,10 +573,10 @@ document.addEventListener('DOMContentLoaded', () => {
         currentUser = newBuyer;
         sessionStorage.setItem('agri_session', JSON.stringify(currentUser));
         updateAuthUI();
-        
+
         closeModal(modalAuth);
         formRegisterBuyer.reset();
-        
+
         showToast('Buyer account registered successfully!', 'check');
         location.href = '#marketplace';
     });
@@ -585,7 +588,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Set background classes depending on simulated image tags
     function getProdImgURL(tag) {
-        switch(tag) {
+        switch (tag) {
             case 'default-veg':
                 return 'linear-gradient(135deg, rgba(22,101,52,0.8), rgba(11,44,25,0.9)), url("https://images.unsplash.com/photo-1592417817098-8f3d6eb19675?auto=format&fit=crop&w=500&q=80")';
             case 'default-fruit':
@@ -601,14 +604,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function renderMarketplace() {
         productsGrid.innerHTML = '';
-        
+
         const searchQuery = marketSearch.value.toLowerCase().trim();
-        
+
         const filtered = products.filter(p => {
             const matchesCat = (currentCategory === 'all') || (p.category === currentCategory);
-            const matchesSearch = p.cropName.toLowerCase().includes(searchQuery) || 
-                                  p.farmerName.toLowerCase().includes(searchQuery) ||
-                                  p.location.toLowerCase().includes(searchQuery);
+            const matchesSearch = p.cropName.toLowerCase().includes(searchQuery) ||
+                p.farmerName.toLowerCase().includes(searchQuery) ||
+                p.location.toLowerCase().includes(searchQuery);
             return matchesCat && matchesSearch;
         });
 
@@ -624,7 +627,7 @@ document.addEventListener('DOMContentLoaded', () => {
         filtered.forEach(p => {
             const card = document.createElement('div');
             card.className = 'product-card';
-            
+
             // Format WhatsApp Link
             const waText = encodeURIComponent(`Hello ${p.farmerName}, I saw your product "${p.cropName}" on Adhiraiyan Agro. I would like to inquire about buying. Price: ₹${p.price}/${p.unit}, Available Qty: ${p.qty}. Please share details.`);
             const waLink = `https://wa.me/91${p.phone}?text=${waText}`;
@@ -672,7 +675,7 @@ document.addEventListener('DOMContentLoaded', () => {
         tab.addEventListener('click', () => {
             categoryTabs.querySelectorAll('.category-tab').forEach(t => t.classList.remove('active'));
             tab.classList.add('active');
-            
+
             currentCategory = tab.dataset.category;
             renderMarketplace();
         });
@@ -696,10 +699,10 @@ document.addEventListener('DOMContentLoaded', () => {
         const usersTbody = document.getElementById('admin-users-tbody');
         usersTbody.innerHTML = '';
         users.forEach(u => {
-            const roleBadge = u.role === 'admin' 
-                ? `<span class="user-badge admin-badge">Admin</span>` 
+            const roleBadge = u.role === 'admin'
+                ? `<span class="user-badge admin-badge">Admin</span>`
                 : (u.role === 'farmer' ? `<span class="user-badge">Farmer</span>` : `<span class="user-badge" style="background-color:hsl(210,69%,95%); color:hsl(210,60%,40%); border-color:transparent;">Buyer</span>`);
-            
+
             const waShareText = encodeURIComponent(`Adhiraiyan Agro Client Details: Name: ${u.name}, Role: ${u.role}, Phone: ${u.phone || 'N/A'}, Email: ${u.email}`);
             const waShareLink = `https://wa.me/919342449732?text=${waShareText}`; // Link to share client details to admin team
 
@@ -764,7 +767,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function renderAdminClients() {
         const tbody = document.getElementById('admin-clients-tbody');
         tbody.innerHTML = '';
-        
+
         if (clients.length === 0) {
             tbody.innerHTML = `<tr><td colspan="6" class="text-center" style="color: var(--clr-text-light);">No B2B clients configured yet.</td></tr>`;
             return;
@@ -798,7 +801,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Add client form submission
     formAdminAddClient.addEventListener('submit', (e) => {
         e.preventDefault();
-        
+
         const newClient = {
             id: 'c_' + Date.now(),
             company: document.getElementById('client-name').value,
@@ -844,7 +847,7 @@ document.addEventListener('DOMContentLoaded', () => {
         btn.addEventListener('click', () => {
             const planName = btn.dataset.plan;
             const priceVal = btn.dataset.price;
-            
+
             if (!priceVal) {
                 // Free Plan
                 showToast(`You have successfully enrolled in the free ${planName} Plan!`, 'check');
@@ -883,7 +886,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     formPayment.addEventListener('submit', (e) => {
         e.preventDefault();
-        
+
         const btnSubmit = document.getElementById('btn-submit-payment');
         btnSubmit.textContent = 'Processing Transaction...';
         btnSubmit.disabled = true;
@@ -892,7 +895,7 @@ document.addEventListener('DOMContentLoaded', () => {
             closeModal(modalCheckout);
             btnSubmit.textContent = 'Proceed Securely';
             btnSubmit.disabled = false;
-            
+
             showToast('Payment Settled Successfully! Membership Activated.', 'shield-check');
             formPayment.reset();
         }, 2000);
@@ -903,7 +906,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // ---------------------------------------------------------
     contactForm.addEventListener('submit', (e) => {
         e.preventDefault();
-        
+
         const name = document.getElementById('contact-name').value;
         showToast(`Thank you, ${name}! Your inquiry message was processed. We will get back to you soon.`, 'check');
         contactForm.reset();
