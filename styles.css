@@ -395,6 +395,17 @@ img {
     margin-bottom: 24px;
 }
 
+@media (max-width: 768px) {
+    .hero-tag {
+        font-size: 0.7rem;
+        padding: 12px 16px;
+        border-radius: var(--border-radius-md);
+        letter-spacing: 1px;
+        line-height: 1.5;
+        text-align: left;
+    }
+}
+
 .hero-heading {
     font-size: 4rem;
     color: var(--clr-white);
@@ -572,6 +583,7 @@ img {
     border-radius: var(--border-radius-md);
     box-shadow: var(--shadow-sm);
     transition: var(--transition);
+    text-align: center;
 }
 
 .feature-card:hover {
@@ -588,12 +600,19 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 24px;
+    margin: 0 auto 24px auto;
+}
+
+.feature-icon svg {
+    width: 24px;
+    height: 24px;
+    display: block;
 }
 
 .feature-icon i {
     width: 24px;
     height: 24px;
+
 }
 
 .feature-card h3 {
@@ -1296,16 +1315,39 @@ img {
     width: 36px;
     height: 36px;
     border-radius: 50%;
-    background-color: rgba(255, 255, 255, 0.1);
     color: var(--clr-white);
     display: flex;
     align-items: center;
     justify-content: center;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.social-links a i {
+    font-size: 1.1rem;
+}
+
+/* Brand Colors */
+.social-whatsapp {
+    background-color: #25D366;
+}
+
+.social-facebook {
+    background-color: #1877F2;
+}
+
+.social-instagram {
+    background-color: #fa09d4;
+}
+
+/* X Logo is black */
+.social-youtube {
+    background-color: #cc1919;
 }
 
 .social-links a:hover {
-    background-color: var(--clr-primary);
-    transform: translateY(-2px);
+    transform: translateY(-3px) scale(1.1);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
 .footer-links {

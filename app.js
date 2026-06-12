@@ -21,14 +21,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Initial products
     const defaultProducts = [
-        { id: 'p1', farmerId: 'u1', farmerName: 'Muthu Kumar', cropName: 'Organic Turmeric Finger', category: 'Spices', price: 145, unit: 'kg', qty: 2500, location: 'Pollachi, TN', img: 'default-spices', desc: 'Premium grade turmeric fingers. Fully organic cultivation. Cleaned and sun-dried.', phone: '9876543210' },
-        { id: 'p2', farmerId: 'u1', farmerName: 'Muthu Kumar', cropName: 'Fresh Organic Coconuts', category: 'Others', price: 28, unit: 'piece', qty: 8000, location: 'Pollachi, TN', img: 'default-veg', desc: 'Well-matured coconuts. Sourced directly from our groves. Average weight 600g.', phone: '9876543210' },
-        { id: 'p3', farmerId: 'u4', farmerName: 'Velusamy G.', category: 'Vegetables', cropName: 'Premium Country Tomatoes', price: 32, unit: 'kg', qty: 1500, location: 'Dharmapuri, TN', img: 'default-veg', desc: 'Harvesting starts tomorrow. Firm, medium-sized, native seeds. Handpicked.', phone: '9876543210' },
-        { id: 'p4', farmerId: 'u5', farmerName: 'Anitha Raj', category: 'Fruits', cropName: 'Salem Gundu Mangoes', price: 85, unit: 'kg', qty: 600, location: 'Salem, TN', img: 'default-fruit', desc: 'Naturally ripened Salem special mangoes. Extremely sweet and pulpy.', phone: '9876543210' },
-        { id: 'p5', farmerId: 'u1', farmerName: 'Muthu Kumar', category: 'Fruits', cropName: 'Organic Red Bananas', price: 45, unit: 'kg', qty: 300, location: 'Coimbatore, TN', img: 'default-fruit', desc: 'Naturally grown red bananas from our own farm. Rich in potassium.', phone: '9876543210' },
-        { id: 'p6', farmerId: 'u6', farmerName: 'Suresh P.', category: 'Vegetables', cropName: 'Fresh Ooty Carrots', price: 60, unit: 'kg', qty: 800, location: 'Ooty, TN', img: 'default-veg', desc: 'Freshly harvested, premium quality carrots from the Nilgiris.', phone: '9876543210' },
-        { id: 'p7', farmerId: 'u1', farmerName: 'Muthu Kumar', category: 'Grains', cropName: 'Ponni Raw Rice (Old)', price: 62, unit: 'kg', qty: 5000, location: 'Thanjavur, TN', img: 'default-grain', desc: '1-year old aged Ponni raw rice. Direct from mill. Excellent cooking quality.', phone: '9876543210' },
-        { id: 'p8', farmerId: 'u7', farmerName: 'Kumar', category: 'Fruits', cropName: 'Apple', price: 150, unit: 'kg', qty: 500, location: 'ooty', img: 'default-fruit', desc: 'Fresh ooty apple.', phone: '9876543210' }
+        { id: 'p1', farmerId: 'u1', farmerName: 'Muthu Kumar', cropName: 'Organic Turmeric Finger', category: 'Spices', price: 145, unit: 'kg', qty: 2500, location: 'Pollachi, TN', img: 'img-turmeric', desc: 'Premium grade turmeric fingers. Fully organic cultivation. Cleaned and sun-dried.', phone: '9876543210' },
+        { id: 'p2', farmerId: 'u1', farmerName: 'Muthu Kumar', cropName: 'Fresh Organic Coconuts', category: 'Others', price: 28, unit: 'piece', qty: 8000, location: 'Pollachi, TN', img: 'img-coconut', desc: 'Well-matured coconuts. Sourced directly from our groves. Average weight 600g.', phone: '9876543210' },
+        { id: 'p3', farmerId: 'u4', farmerName: 'Velusamy G.', category: 'Vegetables', cropName: 'Premium Country Tomatoes', price: 32, unit: 'kg', qty: 1500, location: 'Dharmapuri, TN', img: 'img-tomato', desc: 'Harvesting starts tomorrow. Firm, medium-sized, native seeds. Handpicked.', phone: '9876543210' },
+        { id: 'p4', farmerId: 'u5', farmerName: 'Anitha Raj', category: 'Fruits', cropName: 'Salem Gundu Mangoes', price: 85, unit: 'kg', qty: 600, location: 'Salem, TN', img: 'img-mango', desc: 'Naturally ripened Salem special mangoes. Extremely sweet and pulpy.', phone: '9876543210' },
+        { id: 'p5', farmerId: 'u1', farmerName: 'Muthu Kumar', category: 'Fruits', cropName: 'Organic Red Bananas', price: 45, unit: 'kg', qty: 300, location: 'Coimbatore, TN', img: 'img-banana', desc: 'Naturally grown red bananas from our own farm. Rich in potassium.', phone: '9876543210' },
+        { id: 'p6', farmerId: 'u6', farmerName: 'Suresh P.', category: 'Vegetables', cropName: 'Fresh Ooty Carrots', price: 60, unit: 'kg', qty: 800, location: 'Ooty, TN', img: 'img-carrot', desc: 'Freshly harvested, premium quality carrots from the Nilgiris.', phone: '9876543210' },
+        { id: 'p7', farmerId: 'u1', farmerName: 'Muthu Kumar', category: 'Grains', cropName: 'Ponni Raw Rice (Old)', price: 62, unit: 'kg', qty: 5000, location: 'Thanjavur, TN', img: 'img-rice', desc: '1-year old aged Ponni raw rice. Direct from mill. Excellent cooking quality.', phone: '9876543210' },
+        { id: 'p8', farmerId: 'u7', farmerName: 'Kumar', category: 'Fruits', cropName: 'Apple', price: 150, unit: 'kg', qty: 500, location: 'Ooty, TN', img: 'img-apple', desc: 'Fresh Ooty apples. Crisp, juicy and naturally grown in the Nilgiris.', phone: '9876543210' }
     ];
 
     // Initial clients
@@ -588,19 +588,35 @@ document.addEventListener('DOMContentLoaded', () => {
     // ---------------------------------------------------------
     let currentCategory = 'all';
 
-    // Set background classes depending on simulated image tags
+    // Set background images for each product type
     function getProdImgURL(tag) {
         switch (tag) {
+            case 'img-turmeric':
+                return "url('turmeric_fingers.png')";
+            case 'img-coconut':
+                return "url('organic_coconuts.png')";
+            case 'img-tomato':
+                return "url('country_tomatoes.png')";
+            case 'img-mango':
+                return "url('salem_mangoes.png')";
+            case 'img-banana':
+                return "url('red_bananas.png')";
+            case 'img-carrot':
+                return "url('ooty_carrots.png')";
+            case 'img-rice':
+                return "url('https://images.unsplash.com/photo-1586201375761-83865001e31c?auto=format&fit=crop&w=600&q=80')";
+            case 'img-apple':
+                return "url('https://images.unsplash.com/photo-1560806887-1e4cd0b6cbd6?auto=format&fit=crop&w=600&q=80')";
             case 'default-veg':
-                return 'linear-gradient(135deg, rgba(22,101,52,0.8), rgba(11,44,25,0.9)), url("https://images.unsplash.com/photo-1592417817098-8f3d6eb19675?auto=format&fit=crop&w=500&q=80")';
+                return "url('https://images.unsplash.com/photo-1592417817098-8f3d6eb19675?auto=format&fit=crop&w=600&q=80')";
             case 'default-fruit':
-                return 'linear-gradient(135deg, rgba(22,101,52,0.7), rgba(11,44,25,0.9)), url("https://images.unsplash.com/photo-1519996529931-28324d5a630e?auto=format&fit=crop&w=500&q=80")';
+                return "url('https://images.unsplash.com/photo-1519996529931-28324d5a630e?auto=format&fit=crop&w=600&q=80')";
             case 'default-grain':
-                return 'linear-gradient(135deg, rgba(22,101,52,0.7), rgba(11,44,25,0.9)), url("https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?auto=format&fit=crop&w=500&q=80")';
+                return "url('https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?auto=format&fit=crop&w=600&q=80')";
             case 'default-spices':
-                return 'linear-gradient(135deg, rgba(22,101,52,0.7), rgba(11,44,25,0.9)), url("https://images.unsplash.com/photo-1596040033229-a9821ebd058d?auto=format&fit=crop&w=500&q=80")';
+                return "url('https://images.unsplash.com/photo-1596040033229-a9821ebd058d?auto=format&fit=crop&w=600&q=80')";
             default:
-                return 'linear-gradient(135deg, rgba(22,101,52,0.7), rgba(11,44,25,0.9)), url("https://images.unsplash.com/photo-1595974482597-4b8da8879bc5?auto=format&fit=crop&w=500&q=80")';
+                return "url('https://images.unsplash.com/photo-1595974482597-4b8da8879bc5?auto=format&fit=crop&w=600&q=80')";
         }
     }
 
@@ -635,7 +651,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const waLink = `https://wa.me/91${p.phone}?text=${waText}`;
 
             card.innerHTML = `
-                <div class="product-img-wrapper" style="background-image: ${getProdImgURL(p.img)}">
+                <div class="product-img-wrapper">
                     <span class="product-badge">${p.category}</span>
                 </div>
                 <div class="product-body">
@@ -662,6 +678,11 @@ document.addEventListener('DOMContentLoaded', () => {
                     </a>
                 </div>
             `;
+
+            // Set background image via JS to avoid HTML quote escaping issues
+            const imgWrapper = card.querySelector('.product-img-wrapper');
+            imgWrapper.style.backgroundImage = getProdImgURL(p.img);
+
             productsGrid.appendChild(card);
         });
 
