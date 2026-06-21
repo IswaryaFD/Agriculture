@@ -1921,6 +1921,20 @@ img {
         padding: 15px 0;
     }
 
+    .nav-logo-img {
+        height: 28px;
+    }
+
+    .logo-text {
+        font-size: 1.3rem;
+        white-space: nowrap;
+    }
+
+    .logo-icon {
+        width: 28px;
+        height: 28px;
+    }
+
     .hero-section {
         height: auto;
         min-height: auto;
@@ -2638,4 +2652,249 @@ img {
     object-fit: cover;
     display: block;
     border-radius: 0 !important;
+}
+
+/* -------------------------------------------------------------
+   Strategic Partnerships Section
+   ------------------------------------------------------------- */
+.partnerships-section {
+    background: linear-gradient(135deg, hsl(152, 68%, 97%) 0%, hsl(142, 40%, 93%) 50%, hsl(160, 50%, 95%) 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.partnerships-section::before {
+    content: '';
+    position: absolute;
+    top: -100px;
+    right: -100px;
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(circle, rgba(22, 101, 52, 0.06) 0%, transparent 70%);
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+.partnership-banner {
+    position: relative;
+    background: var(--clr-white);
+    border-radius: var(--border-radius-lg);
+    box-shadow: 0 8px 40px rgba(22, 101, 52, 0.08), 0 1px 3px rgba(0, 0, 0, 0.04);
+    overflow: hidden;
+    border: 1px solid rgba(22, 101, 52, 0.08);
+    transition: var(--transition);
+}
+
+.partnership-banner:hover {
+    box-shadow: 0 12px 48px rgba(22, 101, 52, 0.14), 0 2px 6px rgba(0, 0, 0, 0.05);
+    transform: translateY(-3px);
+}
+
+.partnership-glow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 5px;
+    background: linear-gradient(90deg, var(--clr-primary), var(--clr-accent), var(--clr-gold), var(--clr-primary));
+    background-size: 300% 100%;
+    animation: partnershipGlow 4s ease-in-out infinite;
+}
+
+@keyframes partnershipGlow {
+    0%, 100% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+}
+
+.partnership-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 35px;
+    align-items: center;
+    padding: 40px 45px;
+    justify-content: space-between;
+}
+
+.partnership-icon-area {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.partnership-icon-circle {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--clr-primary), var(--clr-accent));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 6px 20px rgba(22, 101, 52, 0.25);
+}
+
+.partnership-icon-circle i {
+    width: 36px;
+    height: 36px;
+    color: var(--clr-white);
+}
+
+.partnership-details {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    flex: 1;
+    min-width: 300px;
+}
+
+.partnership-title {
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: var(--clr-dark);
+    letter-spacing: -0.3px;
+}
+
+.partnership-desc {
+    color: var(--clr-text-light);
+    font-size: 0.95rem;
+    line-height: 1.7;
+    max-width: 100%;
+}
+
+.partnership-stats-row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-top: 4px;
+}
+
+.partnership-stat {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: var(--clr-primary-light);
+    padding: 10px 16px;
+    border-radius: var(--border-radius-sm);
+    border: 1px solid rgba(22, 101, 52, 0.08);
+    transition: var(--transition);
+}
+
+.partnership-stat:hover {
+    border-color: rgba(22, 101, 52, 0.2);
+    box-shadow: 0 2px 8px rgba(22, 101, 52, 0.08);
+}
+
+.partnership-stat i {
+    width: 20px;
+    height: 20px;
+    color: var(--clr-primary);
+    flex-shrink: 0;
+}
+
+.partnership-stat strong {
+    font-family: 'Outfit', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: var(--clr-dark);
+    display: block;
+    line-height: 1.2;
+}
+
+.partnership-stat span {
+    font-size: 0.78rem;
+    color: var(--clr-text-light);
+    display: block;
+}
+
+.partnership-action {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    flex-shrink: 0;
+}
+
+.btn-partnership-download {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 14px 28px;
+    background: linear-gradient(135deg, var(--clr-primary), hsl(152, 68%, 28%));
+    color: var(--clr-white);
+    border-radius: var(--border-radius-sm);
+    font-family: 'Outfit', sans-serif;
+    font-weight: 700;
+    font-size: 0.95rem;
+    text-decoration: none;
+    box-shadow: 0 4px 16px rgba(22, 101, 52, 0.2);
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    white-space: nowrap;
+}
+
+.btn-partnership-download:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(22, 101, 52, 0.3);
+    background: linear-gradient(135deg, hsl(152, 68%, 28%), var(--clr-primary));
+}
+
+.btn-partnership-download i {
+    width: 20px;
+    height: 20px;
+}
+
+.partnership-file-hint {
+    font-size: 0.75rem;
+    color: var(--clr-text-light);
+    font-weight: 500;
+    opacity: 0.7;
+}
+
+/* Partnership Section Responsive */
+@media (max-width: 1024px) {
+    .partnership-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 25px;
+        padding: 35px 30px;
+    }
+
+    .partnership-stats-row {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .partnership-content {
+        padding: 28px 22px;
+        gap: 20px;
+    }
+
+    .partnership-icon-circle {
+        width: 64px;
+        height: 64px;
+    }
+
+    .partnership-icon-circle i {
+        width: 28px;
+        height: 28px;
+    }
+
+    .partnership-title {
+        font-size: 1.25rem;
+    }
+
+    .partnership-stats-row {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .partnership-stat {
+        justify-content: center;
+    }
+
+    .btn-partnership-download {
+        width: 100%;
+        justify-content: center;
+        padding: 14px 20px;
+    }
 }
